@@ -26,7 +26,7 @@ var challenge1 = document.getElementById("challenge-1");
 
 if (jumboScore >= shrimpScore){
     challenge1.innerHTML = '<p>' + jumbo.join('') + ' = ' + jumboScore + '</p>';
-} else if (jumboScore < shrimpScore){
+} else {
     challenge1.innerHTML = '<p>' + shrimp.join('') + ' = ' + shrimpScore + '</p>';
 }
 
