@@ -101,6 +101,14 @@ console.log('Hi');
 // var challengeFourInputB = [ 3, 8, 1, 2, 4, 12 ];  // [ 6, 16, 2, 4, 8, 24 ]
 // var arrayDouble = [];
 
+
+// for(var i=0; i<challengeFourInputB.length; i++){
+//     arrayDouble.push(challengeFourInputB[i] * 2);
+// }
+
+// document.getElementById("challenge-4").innerHTML = arrayDouble;
+
+// --------------------------------------------------
 // for(var i=0; i<challengeFourInputB.length; i++){
 //     arrayDouble.push(challengeFourInputB[i] * 2);
 // }
