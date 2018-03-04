@@ -91,11 +91,7 @@ console.log('Hi');
 // var challengeThreeInputB = [ 0, 0, 0, 0, 0, 0, 0, 0.55, 0, 0 ];  // 0.55
 
 // for(var i=0; i<challengeThreeInputA.length; i++){
-//     for(var j=0; j<challengeThreeInputA.length; j++){
-//         if(challengeThreeInputA[j] !== challengeThreeInputA[i]){
-//             console.log(challengeThreeInputA[i]);
-//         }
-//     }
+    
 // }
 
 // -------------------------------------------------------------
@@ -105,6 +101,7 @@ console.log('Hi');
 // var challengeFourInputB = [ 3, 8, 1, 2, 4, 12 ];  // [ 6, 16, 2, 4, 8, 24 ]
 // var arrayDouble = [];
 
+
 // for(var i=0; i<challengeFourInputB.length; i++){
 //     arrayDouble.push(challengeFourInputB[i] * 2);
 // }
@@ -112,24 +109,34 @@ console.log('Hi');
 // document.getElementById("challenge-4").innerHTML = arrayDouble;
 
 // --------------------------------------------------
+// for(var i=0; i<challengeFourInputB.length; i++){
+//     arrayDouble.push(challengeFourInputB[i] * 2);
+// }
 
-// Challenge 6
+// document.getElementById("challenge-4").innerHTML = arrayDouble;
 
-var test1 = [1,3]; // 2
-// var test2 = [2,3,4]; // 1
-var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
+// ---------------------------------------------------------------
+// Challenge 5
 
-test3 = test3.sort(function(a,b){
-    return a - b;
-});
-console.log(test3);
-
-for(var i=0; i<test1.length-1; i++){
-    if(test1[i+1] === test1[i]+1){
-        
-    } else {
-        var numMissing = test3[i]+1;
+var array1 = [1,2];
+var array2 = [1];
+var display = [];
+// display = [2]
+for (var i = 0; i<array2.length; i++) {
+    arraylength = array1.length
+    for (var j = 0; j<arraylength; j++) {
+        if (array2[i] === array1[j]) {
+            array1 = array1.slice(0, j).concat(array1.slice(j+1, array1.length));
+        }
     }
 }
 
-document.getElementById("challenge-6").innerHTML = numMissing;
+document.getElementById("challenge-5").innerHTML = array1;
+
+
+// array1 = array1.slice(0, j).concat(array1.slice(j+1, array1.length));
+
+// ----------------------------------------------------------------
+
+// Challenge 6
+
