@@ -91,11 +91,7 @@ console.log('Hi');
 // var challengeThreeInputB = [ 0, 0, 0, 0, 0, 0, 0, 0.55, 0, 0 ];  // 0.55
 
 // for(var i=0; i<challengeThreeInputA.length; i++){
-//     for(var j=0; j<challengeThreeInputA.length; j++){
-//         if(challengeThreeInputA[j] !== challengeThreeInputA[i]){
-//             console.log(challengeThreeInputA[i]);
-//         }
-//     }
+    
 // }
 
 // -------------------------------------------------------------
@@ -116,6 +112,7 @@ console.log('Hi');
 // for(var i=0; i<challengeFourInputB.length; i++){
 //     arrayDouble.push(challengeFourInputB[i] * 2);
 // }
+
 
 // document.getElementById("challenge-4").innerHTML = arrayDouble;
 
@@ -142,25 +139,6 @@ document.getElementById("challenge-5").innerHTML = array1;
 
 // ----------------------------------------------------------------
 
+
 // Challenge 6
-
-var test1 = [1,3]; // 2
-// var test2 = [2,3,4]; // 1
-var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
-
-test3 = test3.sort(function(a,b){
-        return a - b;
-    });
-console.log(test3);
-
-for(var i=0; i<test1.length-1; i++){
-    if(test1[i+1] === test1[i]+1){   
-        } else {
-         var numMissing = test3[i]+1;
-      }
-    }
-
-document.getElementById("challenge-6").innerHTML = numMissing;
-
-
 
