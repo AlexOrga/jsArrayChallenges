@@ -91,22 +91,44 @@ console.log('Hi');
 // var challengeThreeInputB = [ 0, 0, 0, 0, 0, 0, 0, 0.55, 0, 0 ];  // 0.55
 
 // for(var i=0; i<challengeThreeInputA.length; i++){
-//     for(var j=0; j<challengeThreeInputA.length; j++){
-//         if(challengeThreeInputA[j] !== challengeThreeInputA[i]){
-//             console.log(challengeThreeInputA[i]);
-//         }
-//     }
+    
 // }
 
 // -------------------------------------------------------------
 // Challenge 4
 
-var challengeFourInputA = [ 1, 2, 3 ];  // [2, 4, 6]
-var challengeFourInputB = [ 3, 8, 1, 2, 4, 12 ];  // [ 6, 16, 2, 4, 8, 24 ]
-var arrayDouble = [];
+// var challengeFourInputA = [ 1, 2, 3 ];  // [2, 4, 6]
+// var challengeFourInputB = [ 3, 8, 1, 2, 4, 12 ];  // [ 6, 16, 2, 4, 8, 24 ]
+// var arrayDouble = [];
 
-for(var i=0; i<challengeFourInputB.length; i++){
-    arrayDouble.push(challengeFourInputB[i] * 2);
+// for(var i=0; i<challengeFourInputB.length; i++){
+//     arrayDouble.push(challengeFourInputB[i] * 2);
+// }
+
+// document.getElementById("challenge-4").innerHTML = arrayDouble;
+
+// ---------------------------------------------------------------
+// Challenge 5
+
+var array1 = [1,2];
+var array2 = [1];
+var display = [];
+// display = [2]
+for (var i = 0; i<array2.length; i++) {
+    arraylength = array1.length
+    for (var j = 0; j<arraylength; j++) {
+        if (array2[i] === array1[j]) {
+            array1 = array1.slice(0, j).concat(array1.slice(j+1, array1.length));
+        }
+    }
 }
 
-document.getElementById("challenge-4").innerHTML = arrayDouble;
+document.getElementById("challenge-5").innerHTML = array1;
+
+
+// array1 = array1.slice(0, j).concat(array1.slice(j+1, array1.length));
+
+// ----------------------------------------------------------------
+
+// Challenge 6
+
