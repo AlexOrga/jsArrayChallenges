@@ -113,6 +113,7 @@ console.log('Hi');
 //     arrayDouble.push(challengeFourInputB[i] * 2);
 // }
 
+
 // document.getElementById("challenge-4").innerHTML = arrayDouble;
 
 // ---------------------------------------------------------------
@@ -137,6 +138,7 @@ document.getElementById("challenge-5").innerHTML = array1;
 // array1 = array1.slice(0, j).concat(array1.slice(j+1, array1.length));
 
 // ----------------------------------------------------------------
+
 
 // Challenge 6
 
