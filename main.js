@@ -208,3 +208,27 @@ if(thirdTake !== 0){
 }
 
 document.getElementById("challenge-7").innerHTML = stringMaker;
+
+// ------------------------------------------------------
+
+// Challenge 8
+
+var test1 = 274; // Display = '2-7-4'
+var test2 = 6815; // Display = '68-1-5'
+
+var stringCh7 = test1.toString();
+var stringSplitCh7 = stringCh7.split('');
+var newArrayCh7 = [];
+console.log('stringSplitCh7: ',stringSplitCh7);
+
+for(var i=0; i<stringSplitCh7.length; i++){
+    if(stringSplitCh7[i]%2 === 0){
+        newArrayCh7.push(stringSplitCh7[i])
+    } else if(i < (stringSplitCh7.length - 1)){
+        newArrayCh7.push('-' + stringSplitCh7[i] + '-');
+    } else {
+        newArrayCh7.push(stringSplitCh7[i]);
+    }
+}
+newArrayCh7 = newArrayCh7.join('');
+document.getElementById("challenge-8").innerHTML = newArrayCh7;
