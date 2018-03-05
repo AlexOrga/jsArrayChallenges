@@ -160,3 +160,43 @@ for(var i=0; i<test1.length-1; i++){
 }
 
 document.getElementById("challenge-6").innerHTML = numMissing;
+
+// ----------------------------------------------------------------
+
+//Challenge 7
+
+var numBeggers = 2;
+var offerings = [1,2,3,4,5];
+var counter = 0;
+var beggers = [];
+var firstTake = 0;
+var secondTake = 0;
+// first one takes [1, 3, 5]=9
+// second one takes [2, 4]=6
+
+//display [9, 6]
+
+
+for(var h=0; h<numBeggers.valueOf(); h++){
+    counter += 1;
+    beggers.push(counter);
+}
+
+
+
+for(var j=0; j<beggers.length; j++){
+    if(beggers[j] === 1){
+    for (var i=j; i<offerings.length; i+= 2){
+        firstTake += offerings[i];
+    }
+} else {
+    for (var i=j; i<offerings.length; i+=2){
+        secondTake += offerings[i];
+        }
+    }
+}
+
+var stringMaker = '<p> First begger takes: ' + firstTake + '</p>';
+stringMaker += '<p> Second begger takes: ' + secondTake + '</p>';
+
+document.getElementById("challenge-7").innerHTML = stringMaker;
