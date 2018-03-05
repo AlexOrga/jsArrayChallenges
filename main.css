@@ -1,0 +1,11 @@
+.row {
+    text-align: center;
+  }
+  
+  .pin-container {
+    display: inline-block;
+  }
+  
+  .pin-container p {
+    margin: 0;
+  }
