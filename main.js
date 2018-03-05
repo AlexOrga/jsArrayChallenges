@@ -143,19 +143,19 @@ document.getElementById("challenge-5").innerHTML = array1;
 // Challenge 6
 
 var test1 = [1,3]; // 2
-// var test2 = [2,3,4]; // 1
+var test2 = [2,3,4]; // 1
 var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
 
-test3 = test3.sort(function(a,b){
+test1 = test1.sort(function(a,b){
     return a - b;
 });
-console.log(test3);
+console.log(test1);
 
 for(var i=0; i<test1.length-1; i++){
     if(test1[i+1] === test1[i]+1){
         
     } else {
-        var numMissing = test3[i]+1;
+        var numMissing = test1[i]+1;
     }
 }
 
@@ -232,3 +232,16 @@ for(var i=0; i<stringSplitCh7.length; i++){
 }
 newArrayCh7 = newArrayCh7.join('');
 document.getElementById("challenge-8").innerHTML = newArrayCh7;
+
+// Challenge 9
+
+var phoneNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]; // => displays "(123) 456-7890"
+
+var areaCode = phoneNumber.slice(0, 3);
+var threeDigit = phoneNumber.slice(3, 6);
+var fourDigit = phoneNumber.slice(6, phoneNumber.length);
+areaCode = '(' + areaCode.join('') + ')';
+var sevenDigit = threeDigit.join('') + '-' + fourDigit.join('');
+phoneNumber = areaCode + sevenDigit;
+
+document.getElementById("challenge-9").innerHTML = phoneNumber;
