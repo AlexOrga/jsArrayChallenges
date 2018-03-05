@@ -165,12 +165,13 @@ document.getElementById("challenge-6").innerHTML = numMissing;
 
 //Challenge 7
 
-var numBeggers = 2;
+var numBeggers = 3;
 var offerings = [1,2,3,4,5];
 var counter = 0;
 var beggers = [];
 var firstTake = 0;
 var secondTake = 0;
+var thirdTake = 0;
 // first one takes [1, 3, 5]=9
 // second one takes [2, 4]=6
 
@@ -186,17 +187,24 @@ for(var h=0; h<numBeggers.valueOf(); h++){
 
 for(var j=0; j<beggers.length; j++){
     if(beggers[j] === 1){
-    for (var i=j; i<offerings.length; i+= 2){
+    for (var i=j; i<offerings.length; i+= numBeggers){
         firstTake += offerings[i];
     }
-} else {
-    for (var i=j; i<offerings.length; i+=2){
+} else if(beggers[j] === 2){
+    for (var i=j; i<offerings.length; i+= numBeggers){
         secondTake += offerings[i];
+        }
+    } else if(beggers[j] === 3){
+        for (var i=j; i<offerings.length; i+= numBeggers){
+            thirdTake += offerings[i];
         }
     }
 }
 
 var stringMaker = '<p> First begger takes: ' + firstTake + '</p>';
 stringMaker += '<p> Second begger takes: ' + secondTake + '</p>';
+if(thirdTake !== 0){
+    stringMaker += '<p> Third begger takes: ' + thirdTake + '</p>';
+}
 
 document.getElementById("challenge-7").innerHTML = stringMaker;
