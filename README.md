@@ -6,7 +6,7 @@ This is a set of 10 word challenges that had to be completed using nothing but v
 
 # Screen Shots
 
-**1**
+![Webpage](https://raw.githubusercontent.com/AlexOrga/jsArrayChallenges/master/screenshots/JSArrayChall.png)
 
 # How To Run
 
