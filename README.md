@@ -1,6 +1,18 @@
-# jsArrayChallenges
+# JS Array Challenges
 
-Challenge #1: Highest Scoring Word
-Given a string of 2 words, find the highest scoring word. Each letter of a word scores points according to it's position in the alphabet: a = 1, b = 2, c = 3 etc. All letters will be lowercase there will be no punctuation. Display (id='challenge-1') the word that is the highest scoring. If two words score the same, display the word that appears earliest in the original string.
+# Description
 
-var challengeOneInput = "jumbo shrimp";  //jumbo=61, shrimp=83 should display shrimp
+This is a set of 10 word challenges that had to be completed using nothing but vanilla JavaScript.  These are all logic based challenges and are used to test the students knowledge of basic JavaScript commands.
+
+# Screen Shots
+
+**1**
+
+# How To Run
+
+- Requires Node.js
+- In your browser type ``` npm install http-server ```
+- Clone down this repo and navigate to the projects folder
+- In the terminal and on this project's local directory type ``` hs -p 8080 ```
+- Navigate to localhost: 8080 in the browser
+- If page does not display press ``` control - shift - r ```
